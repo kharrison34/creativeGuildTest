@@ -1,0 +1,28 @@
+Full Stack Web Developer - Skill Test
+
+You will find all the required resources within the technical test folder.
+
+1. landscapes.json: Use this sample json file to get the data you need to show in the user interface, such as the photographer's profile details along with an Array that contains the data for each of gallery images.
+
+2. img (folder): This folder contains the images for both the gallery and profile sections.
+
+3. wireframe.jpg: This is just an idea of the final user interface, showing the photographer's profile and gallery grid. (You could also suggest your own user interface idea)
+
+I - Front-End
+
+You must fetch the data from the json file asynchronously (ajax) and display in the layout as it shows in the wireframe.
+You must develop the styles for each of the elements of the user interface.
+
+* Feel free to use any framework, library or resource that you consider helpful for your development process. Any additional UI or UX ideas out of the provided wireframe guidelines will count as a bonus.
+
+II - Back-end
+
+- Design a database based off the provided data structure (landscapes.json). 
+- Build a RESTful API in PHP that returns the same data and format of the provided data structure (landscapes.json).
+- Build all the necessary models/controllers that you consider needed based off the provided data structure. Example (Photographer, Gallery, Photo, etc).
+
+* Please make sure to use Laravel for building the API
+
+You must attach a document in which you describe the development process and highlight what you consider was easy or difficult. Also provide a brief description explaining which tools did you decide to use and why did you consider these important for on your development. 
+
+** Please create and publish a repository (Git / Bitbucket) and share the link so we could track the process of your test.
