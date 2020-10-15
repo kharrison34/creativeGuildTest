@@ -1,18 +1,49 @@
+.App {
+  background: purple;
+}
+.media-div {
+  background-color: #ffffff;
+  border-radius: 25px;
+}
 .proImg {
   max-width: 150px;
   max-height: 1500px;
   border-radius: 50%;
   object-fit: scale-down;
 }
-
+.bio {
+  margin: 0%;
+}
+.medBody {
+  padding-top: 30%;
+  padding-right: 3rem;
+}
 .medHead p {
   font-size: medium;
+
   color: grey;
 }
 .medBody h3 {
-  /* padding-top: 1rem; */
   font-size: small;
+  margin: 0;
+  padding: 0%;
+  line-height: 0;
+  color: grey;
 }
 .medBody p {
   color: palevioletred;
+}
+
+.title {
+  position: absolute;
+  font-size: 20px;
+  color: #ffffff;
+  top: 8rem;
+  left: 16px;
+}
+.card-p p {
+  font-size: small;
+}
+.p-right {
+  float: right;
 }
