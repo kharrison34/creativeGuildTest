@@ -1,0 +1,17 @@
+.proImg {
+  max-width: 150px;
+  max-height: 1500px;
+  border-radius: 50%;
+  object-fit: scale-down;
+}
+
+.medHead p {
+  font-size: medium;
+  color: grey;
+}
+.medBody h3 {
+  font-size: small;
+}
+.medBody p {
+  color: palevioletred;
+}
