@@ -10,6 +10,7 @@
   color: grey;
 }
 .medBody h3 {
+  padding-top: 1rem;
   font-size: small;
 }
 .medBody p {

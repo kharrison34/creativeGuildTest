@@ -14,9 +14,10 @@ export default class FetchData extends React.Component {
         email: null,
         bio: null,
         profile_picture: null,
-      
+        album: null,
+        
     }
-
+   
 
     async componentDidMount() {
         const url = "http://localhost:3000/landscapes.json";
@@ -28,10 +29,11 @@ export default class FetchData extends React.Component {
             email: data.email, 
             bio: data.bio, 
             profile_picture: data.profile_picture,
-
+            album: [ ...data.album],
+           
             loading: false
             });
-        // console.log(data.name, data.phone, data.email, data.bio, data.profile_picture);
+        console.log( data.album[1]);
     }
 
 
@@ -46,7 +48,7 @@ export default class FetchData extends React.Component {
                     <Row>
                         <Col> 
                         <Media className="my-3 p-3" >
-                         <img className="Rounded proImg" src={profilePic} />
+                         <img className="Rounded proImg" src={profilePic} alt="profile picture" />
                             <Media heading className="p-3 medHead">
                                 <h1>
                                  {this.state.name}
@@ -72,7 +74,7 @@ export default class FetchData extends React.Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
+                        {/* <Col xs="6" sm="4">{this.state.album.title}</Col> */}
                         <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
                         <Col sm="4">.col-sm-4</Col>
                     </Row>
