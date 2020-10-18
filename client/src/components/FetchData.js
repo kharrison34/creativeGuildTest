@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { FaHeart } from 'react-icons/fa'
 import { Container, Row, Col, Media,  Card, CardImg, CardText, CardBody,
     CardTitle } from 'reactstrap';
 import '../App.css'
@@ -96,6 +97,8 @@ export default class FetchData extends React.Component {
                         : 
                             <Fragment>
                                 {this.state.album.map(single_album => (
+
+                                    
                                     <Col xs="6" sm="4">
                                         <Card className="mb-3">
                                             <div className="card-container">
@@ -107,6 +110,7 @@ export default class FetchData extends React.Component {
                                                 <div className="card-p">
                                                  <p>{single_album.description}</p>
                                                  <p className="p-right">{single_album.date}</p>
+                                                 {single_album.featured ? <FaHeart className='heart'></FaHeart> : null}
 
                                                 </div>
                                                
