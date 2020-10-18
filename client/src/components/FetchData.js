@@ -36,7 +36,7 @@ export default class FetchData extends React.Component {
            
             loading: false
             });
-        console.log( data.album[1]);
+        // console.log( data.album[1]);
     }
 
     
@@ -69,11 +69,15 @@ export default class FetchData extends React.Component {
                                 </Media>
                                 <Media body className="">
                                     <div className="medBody">
-                                        <h3>Phone</h3>
-                                        <p>{this.state.phone}</p> 
-                                        <h3>Email</h3>
-                                        <p> {this.state.email}</p>   
+                                        <div className="medBody-inner">
+                                            <h3>Phone</h3>
+                                            <p>{this.state.phone}</p> 
+                                            <h3>Email</h3>
+                                            <p> {this.state.email}</p>   
 
+
+                                        </div>
+                                     
 
                                     </div>
                                 
@@ -86,7 +90,7 @@ export default class FetchData extends React.Component {
                       
                         </Col>
                     </Row>
-                    {/* //cards */}
+                   
                     <Row>
                         {this.state.loading ? null
                         : 
